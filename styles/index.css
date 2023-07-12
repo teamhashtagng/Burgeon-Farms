@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  width: 900px;
+  font-size: 35px;
+}
+
+.nav-link {
+  margin-left: 6%;
+}
+
+.nav-icon {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.hamburger {
+  margin-left: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.gen-btn {
+  display: inline-flex;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  font-weight: 600;
+  padding: 11px 31px;
+  height: 48px;
+  text-decoration: none !important;
+  color: #25282c;
+  background-color: #ffcc00;
+  border: 1px solid transparent;
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: inherit;
+  white-space: nowrap;
+  transition: background 0.15s ease;
+}
+
+.gen-btn:hover {
+  background-color: #d9b833;
+}
+
+.logo-img {
+  width: 50%;
+}
+
+.nav-logo {
+  width: 200px;
+}
+
+.container {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#check {
+  display: none;
+}
+
+.checkbtn {
+  margin-right: 30px;
+  font-size: 30px;
+  display: none !important;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  /* .nav-links {
+    float: none;
+    position: fixed;
+    font-size: 30px;
+    height: 100%;
+    background-color: #9f50de;
+    opacity: 90%;
+    display: block !important;
+    justify-content: center !important;
+    padding: 100px;
+    width: 100%;
+    top: -130%;
+    left: 0;
+    text-align: centr;
+    transition: all 0.5s ease-in-out;
+    margin-left: 0px !important;
+  } */
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-link {
+    margin-left: 0px;
+    margin-bottom: 2%;
+  }
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .gen-btn {
+    margin-top: 3%;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .checkbtn {
+    display: block !important;
+  }
+  #check:checked ~ .nav-links {
+    left: 0% !important;
+    top: 40px;
+  }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* .nav-links {
+    float: none;
+    position: fixed;
+    font-size: 30px;
+    height: 100%;
+    background-color: #9f50de;
+    opacity: 90%;
+    display: block !important;
+    justify-content: center !important;
+    padding: 100px;
+    width: 100%;
+    top: -130%;
+    left: 0;
+    text-align: centr;
+    transition: all 0.5s ease-in-out;
+    margin-left: 0px !important;
+  } */
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .nav-links {
+    display: none;
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  /* .nav-links {
+    display: none;
+  } */
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* .nav-links {
+    display: none;
+  } */
+  /* .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  } */
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+  body {
+    background-color: white;
+  }
+}
