@@ -23,6 +23,22 @@ body {
 
 .nav-link {
   margin-left: 6%;
+  transition: 0.7s ease;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: green;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: green;
 }
 
 .nav-icon {
@@ -55,6 +71,139 @@ body {
   letter-spacing: inherit;
   white-space: nowrap;
   transition: background 0.15s ease;
+}
+
+.about-us-section {
+  display: flex;
+  width: 100%;
+  margin-top: 5%;
+  justify-content: space-between;
+}
+
+.our-services-section {
+  width: 100%;
+  margin-top: 7%;
+  background-color: #fffaf1;
+  padding-top: 5%;
+}
+
+.service-image-boxes {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.service-boxes {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.services-box {
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  padding: 0.1%;
+  background: white;
+  transition: 0.4s ease-in-out;
+}
+.services-box:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.service-info {
+  text-align: center;
+  margin-top: 4%;
+  padding: 2%;
+}
+
+.btn-type2 {
+  display: inline-flex;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  font-weight: 600;
+  padding: 11px 31px;
+  height: 48px;
+  text-decoration: none !important;
+  color: #25282c;
+  background-color: #ebf3ec;
+  border: 1px solid transparent;
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: inherit;
+  white-space: nowrap;
+  transition: background 0.15s ease;
+}
+
+.service-info-header {
+  font-size: 15px;
+}
+
+.service-info-text {
+  color: #747474;
+  margin-top: 2%;
+}
+
+.service-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.service-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s ease;
+}
+
+.service-img:hover {
+  transform: scale(1.2);
+  transform-origin: center;
+}
+
+.section-title {
+  color: #ffcc00;
+}
+.our-service {
+  text-align: center;
+}
+.about-img-section {
+  width: 100%;
+  height: 500px;
+  margin-right: 2%;
+}
+
+.about-btn {
+  margin-top: 5%;
+}
+
+.about-header {
+  /* font-size: 40px; */
+  word-break: break-all;
+  /* width: 50%; */
+  font-size: 2.25rem;
+  line-height: 1.38;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.about-text {
+  /* width: 50%; */
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.about-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .gen-btn:hover {
@@ -106,27 +255,77 @@ body {
   object-fit: cover;
 }
 
+.footer-area {
+  background: #212018;
+  margin-top: 6%;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 7%;
+}
+
+.footer-section h5 {
+  color: white;
+  font-size: 20px;
+}
+.footer-section p {
+  color: white;
+  font-size: 15px;
+}
+
+.footer-company-logo {
+}
+.footer-company-logo-text {
+  max-width: 350px;
+  margin-top: 2%;
+}
+
+.footer-item-section {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: 5%;
+}
+
 @media (max-width: 480px) {
-  /* .nav-links {
+  .nav-links {
     float: none;
     position: fixed;
     font-size: 30px;
     height: 100%;
-    background-color: #9f50de;
-    opacity: 90%;
+    background-color: #d9b833;
+
     display: block !important;
     justify-content: center !important;
-    padding: 100px;
+    padding-top: 15px;
     width: 100%;
-    top: -130%;
-    left: 0;
-    text-align: centr;
+    top: 90px;
+    left: -200%;
+    text-align: center;
     transition: all 0.5s ease-in-out;
     margin-left: 0px !important;
-  } */
+    z-index: 9;
+  }
 
-  .nav-links {
-    display: none;
+  .nav-links.active {
+    left: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 
   .nav-link {
@@ -151,6 +350,57 @@ body {
   #check:checked ~ .nav-links {
     left: 0% !important;
     top: 40px;
+  }
+  .service-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-section {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer-section h5 {
+    color: white;
+    font-size: 15px;
+  }
+  .footer-section p {
+    color: white;
+    font-size: 12px;
+  }
+  .footer-items {
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-right: 5%;
+  }
+  .services-box {
+    width: 160px;
+  }
+  .banner-img {
+    height: 400px !important;
+  }
+
+  .service-image-boxes {
+    width: 160px;
+    height: 150px;
+    overflow: hidden;
+  }
+  .about-us-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-img-section {
+    height: 200px;
+    margin-bottom: 2%;
+  }
+  .about-header {
+    font-size: 1.5em;
+    margin-bottom: 5%;
   }
 }
 
@@ -177,8 +427,69 @@ body {
     padding-left: 5%;
     padding-right: 5%;
   }
-  .nav-links {
+  /* .nav-links {
     display: none;
+  } */
+
+  .nav-links {
+    float: none;
+    position: fixed;
+    font-size: 30px;
+    height: 100%;
+    background-color: #d9b833;
+    opacity: 90%;
+    display: block !important;
+    justify-content: center !important;
+    padding: 100px;
+    width: 100%;
+    top: 70px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s ease-in-Sout;
+    margin-left: 0px !important;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-link {
+    margin-left: 0px;
+    margin-bottom: 2%;
+  }
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .gen-btn {
+    margin-top: 3%;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .checkbtn {
+    display: block !important;
+  }
+  #check:checked ~ .nav-links {
+    left: 0% !important;
+    top: 40px;
   }
 }
 
