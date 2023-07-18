@@ -75,7 +75,6 @@ body {
 
 .about-us-section {
   display: flex;
-  width: 100%;
   margin-top: 5%;
   justify-content: space-between;
 }
@@ -96,6 +95,7 @@ body {
 .service-boxes {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -114,6 +114,9 @@ body {
 }
 
 .service-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   margin-top: 4%;
   padding: 2%;
@@ -147,6 +150,8 @@ body {
 .service-info-text {
   color: #747474;
   margin-top: 2%;
+  line-height: 1.5;
+  padding: 2%;
 }
 
 .service-btn {
@@ -175,8 +180,8 @@ body {
   text-align: center;
 }
 .about-img-section {
-  width: 100%;
-  height: 500px;
+  width: 50%;
+  height: 400px;
   margin-right: 2%;
 }
 
@@ -198,12 +203,74 @@ body {
   /* width: 50%; */
   text-align: justify;
   line-height: 1.5;
+  max-width: 700px;
 }
 
+.mission-vision-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+}
+
+.mission-vision-header {
+  font-size: 20px;
+  margin-bottom: 4%;
+}
+
+.mission-vision-statements {
+  line-height: 2;
+}
+
+.mission-area {
+  max-width: 500px;
+}
+.vision-area {
+  max-width: 500px;
+}
+
+.mission-vision-icon {
+  padding: 7%;
+  font-size: 40px;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: #8dfc9c;
+  width: 50px;
+  height: 50px;
+  color: green;
+  border-radius: 50%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.mission-area {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vision-area {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mission-vision-icons {
+  width: 100%;
+  height: 100%;
+}
 .about-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.mission-vision-area {
+  margin-top: 5%;
 }
 
 .gen-btn:hover {
@@ -258,6 +325,7 @@ body {
 .footer-area {
   background: #212018;
   margin-top: 6%;
+  width: 100%;
 }
 
 .footer-section {
@@ -309,6 +377,10 @@ body {
     z-index: 9;
   }
 
+  .mission-vision-section {
+    flex-direction: column;
+  }
+
   .nav-links.active {
     left: 0;
   }
@@ -333,8 +405,8 @@ body {
     margin-bottom: 2%;
   }
   .container {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .gen-btn {
     margin-top: 3%;
@@ -352,17 +424,14 @@ body {
     top: 40px;
   }
   .service-boxes {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
 
   .footer-section {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     justify-content: center;
-    width: 100%;
   }
 
   .footer-section h5 {
@@ -379,14 +448,14 @@ body {
     margin-right: 5%;
   }
   .services-box {
-    width: 160px;
+    width: 80%;
   }
   .banner-img {
     height: 400px !important;
   }
 
   .service-image-boxes {
-    width: 160px;
+    width: 100%;
     height: 150px;
     overflow: hidden;
   }
@@ -397,6 +466,8 @@ body {
   .about-img-section {
     height: 200px;
     margin-bottom: 2%;
+    width: 100%;
+    margin-bottom: 10%;
   }
   .about-header {
     font-size: 1.5em;
