@@ -25,6 +25,17 @@ body {
   margin-left: 6%;
   transition: 0.7s ease;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: black;
+  transition: 0.7s ease;
+}
+
+.nav-link a:hover {
+  color: green;
 }
 
 .nav-link:hover {
