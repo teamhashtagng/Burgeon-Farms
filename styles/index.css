@@ -559,6 +559,11 @@ body {
     margin-top: 3%;
   }
 
+  .banner-header {
+    font-size: 2.5rem;
+    margin-bottom: 4%;
+  }
+
   .hamburger {
     display: block;
   }
@@ -659,6 +664,25 @@ body {
   .get-started-header {
     font-size: 1.7rem;
     margin-bottom: 4%;
+  }
+  @keyframes zoom-in {
+    0% {
+      background-size: 180%;
+    }
+    100% {
+      background-size: 220%;
+    }
+  }
+
+  .banner-img {
+    /* -webkit-transition: 10s ease-out;
+  transition: 10s ease-out;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); */
+    /* transition: transform 1s ease;
+  transform: scale(1.7);
+  transform-origin: center; */
+    animation: zoom-in 10s infinite;
   }
 }
 
