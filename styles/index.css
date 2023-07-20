@@ -605,6 +605,14 @@ footer a:hover {
   animation: zoom-in 10s infinite;
 }
 
+.footer-contact {
+  width: 300px;
+}
+
+.footer-comopany {
+  width: 200px;
+}
+
 @media (max-width: 480px) {
   .nav-links {
     float: none;
@@ -627,6 +635,14 @@ footer a:hover {
 
   .team-area {
     flex-direction: column;
+  }
+
+  .footer-contact {
+    width: unset;
+  }
+
+  .footer-comopany {
+    width: unset;
   }
 
   .about-page-header {
@@ -693,9 +709,9 @@ footer a:hover {
   }
 
   .footer-section {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    flex-direction: column;
     justify-content: center;
+    gap: 20px;
   }
 
   .footer-section h5 {
