@@ -63,6 +63,30 @@ body {
   display: none;
 }
 
+footer a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in;
+}
+
+.footer-icon {
+  background-color: #ffcc00;
+  padding: 6%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  margin-right: 5%;
+}
+
+footer a:hover {
+  color: #ffcc00;
+}
+
 .gen-btn {
   display: inline-flex;
   font-size: 16px;
@@ -213,6 +237,52 @@ body {
   max-width: 490px;
 
   display: block;
+}
+
+.about-page-header {
+  word-wrap: break-word;
+  /* width: 50%; */
+  font-size: 3rem;
+  line-height: 1.38;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  max-width: 800px;
+
+  display: block;
+}
+
+.about-us-page-s1-text {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.team-img-div {
+  width: 350px;
+  height: 400px;
+}
+
+.team-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-area {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.team-header {
+  font-size: 1.3rem;
+}
+.team-section {
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.team-name-position {
+  margin-top: 5%;
+  text-align: center;
 }
 
 .about-text {
@@ -395,8 +465,28 @@ body {
 
 .footer-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 160px;
   padding: 7%;
+}
+
+.breadcrumb {
+  color: #ffcc00;
+  font-weight: 800;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+.breadcrumb:hover {
+  color: #d9b833;
+}
+
+.about-banner-img {
+  height: 300px;
+  padding-top: 5%;
+}
+
+.about-banner-info {
+  text-align: center;
 }
 
 .footer-section h5 {
@@ -533,6 +623,17 @@ body {
     transition: all 0.5s ease-in-out;
     margin-left: 0px !important;
     z-index: 9;
+  }
+
+  .team-area {
+    flex-direction: column;
+  }
+
+  .about-page-header {
+    width: 100%;
+    max-width: unset;
+    font-size: 2rem;
+    text-align: center;
   }
 
   .mission-vision-section {
