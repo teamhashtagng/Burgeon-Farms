@@ -14,18 +14,22 @@
   <body>
     <header>
       <div class="nav container">
-        <input type="checkbox" id="check" />
         <div class="nav-logo">
+          <a href="../index.html">
           <img src="../images/logo.png" alt="Burgeon Farms" class="logo-img" />
+          </a>
         </div>
 
         <div class="nav-links">
-          <h6 class="nav-link"><a href="../index.html">Home</a></h6>
-          <h6 class="nav-link"><a href="./about.html">About</a></h6>
+          <h6 class="nav-link"><a href="../index.html" class="nav-a">Home</a></h6>
+          <h6 class="nav-link"><a href="./about.html" class="nav-a"> About</a></h6>
           <h6 class="nav-link">
-            <a href="./services.html" class="">Services</a>
+            <a href="./services.html" class="nav-a">Our Products</a>
           </h6>
-          <a href="./contact.html" class="nav-link">
+          <h6 class="nav-link">
+            <a href="./team.html" class="nav-a">Our Team</a>
+          </h6>
+          <a href="./contact.html" class="nav-link nav-a">
             <button
               class="gen-btn nav-link"
               style="display: flex; align-items: center"
@@ -45,187 +49,138 @@
           <div class="bar"></div>
         </div>
       </div>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div
-            class="swiper-slide banner-img"
-            style="
-              background-image: linear-gradient(
-                  0.6deg,
-                  rgba(30, 163, 68, 0.813) 40%,
-                  rgba(0, 0, 0, 0) 104.4%
-                ),
-                url('../images/banner1.jpg');
-              height: 800px;
-              background-position: center;
-              width: 100%;
-              background-repeat: no-repeat;
-            "
-          >
-            <div class="container">
-              <div class="banner-info">
-                <h4 class="banner-header">
-                  Premium
-                  <span style="color: #ffcc00 !important">products and</span>
-                  customers
-                </h4>
-                <p style="color: white; margin-bottom: 4%">
-                  At Burgeon Farms And Agro Industries Limited, we offer a range
-                  of products to meet your specific needs
-                </p>
-                <button class="gen-btn">Discover more</button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="swiper-slide banner-img"
-            style="
-              background-image: linear-gradient(
-                  0.6deg,
-                  rgba(30, 163, 68, 0.813) 40%,
-                  rgba(0, 0, 0, 0) 104.4%
-                ),
-                url('../images/banner2.jpg');
-              height: 800px;
-              background-position: center;
-              width: 100%;
-              background-repeat: no-repeat;
-            "
-          >
-            <div class="container">
-              <div class="banner-info">
-                <h4 class="banner-header">
-                  Premium
-                  <span style="color: #ffcc00 !important">products and</span>
-                  customers
-                </h4>
-                <p style="color: white; margin-bottom: 4%">
-                  At Burgeon Farms And Agro Industries Limited, we offer a range
-                  of products to meet your specific needs
-                </p>
-                <button class="gen-btn">Discover more</button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="swiper-slide banner-img"
-            style="
-              background-image: linear-gradient(
-                  0.6deg,
-                  rgba(30, 163, 68, 0.813) 40%,
-                  rgba(0, 0, 0, 0) 104.4%
-                ),
-                url('../images/banner3.jpg');
-              height: 800px;
-              background-position: center;
-              width: 100%;
-              background-repeat: no-repeat;
-            "
-          >
-            <div class="container">
-              <div class="banner-info">
-                <h4 class="banner-header bounceIn">
-                  Premium
-                  <span style="color: #ffcc00 !important">products and</span>
-                  customers
-                </h4>
-                <p style="color: white; margin-bottom: 4%">
-                  At Burgeon Farms And Agro Industries Limited, we offer a range
-                  of products to meet your specific needs
-                </p>
-                <button class="gen-btn">Discover more</button>
-              </div>
+
+      <div class="about-banner">
+        <div
+          class="about-banner-img"
+          style="
+           background-image: linear-gradient(
+                0.6deg,
+                rgba(38, 42, 39, 0.813) 10%,
+                rgba(0, 0, 0, 0) 120%
+              ),
+              url('../images/banner3.jpg');
+
+            background-position: center;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+          "
+        >
+          <div class="container">
+            <div class="about-banner-info">
+              <h4 class="banner-header bounceIn">Contact Us</h4>
+              <p style="color: white; margin-bottom: 4%; font-size: 20px">
+                <a href="../index.html" class="breadcrumb">Home</a> > Contact Us
+              </p>
             </div>
           </div>
         </div>
-        <!-- <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div> -->
       </div>
+      <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
     </header>
     <main>
-      <div data-aos="fade-up" data-aos-duration="3000">
+       <div class="contact-area default-padding" style="background-image: url(assets/img/shape/28.png);">
         <div class="container">
-          <div class="about-us-section">
-            <div class="about-img-section">
-              <img
-                src="../images/photo-tomatoes-greenhouse.jpg"
-                class="about-img"
-              />
-            </div>
-            <div>
-              <p class="section-title">ABOUT US</p>
-              <h6 class="about-header">
-                We are the industry
-                <span style="color: #ffcc00">leaders in</span>
-                Agriculture
-              </h6>
-              <p class="about-text">
-                Burgeon Farms And Agro Industries Limited was founded over a
-                decade ago with a mission to provide the highest quality Agro
-                raw-materials and minerals to our customers. Since then, we have
-                grown into a trusted supplier, with a reputation for excellence
-                in everything we do. We have invested heavily in our operations
-                and facilities, ensuring that we have the resources and
-                expertise to meet the needs of our customers.
-              </p>
-              <br />
-
-              <button
-                class="gen-btn about-btn"
-                style="display: flex; align-items: center"
-              >
-                Discover more &nbsp;
-                <span class="iconify" data-icon="quill:arrow-right"></span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="mission-vision-area">
-        <div class="container">
-          <div class="mission-vision-section">
-            <div data-aos="fade-right" data-aos-duration="3000">
-              <div class="mission-area">
-                <div class="mission-vision-icon">
-                  <span
-                    class="iconify mission-vision-icons"
-                    data-icon="covid:transmission-virus-handshake"
-                  ></span>
+            <div class="contact-section">
+                
+                <div class="contact-form-area">
+                    <div class="contact-form-style-one">
+                        <h5 class="sub-title">Have Questions?</h5>
+                        <h2 class="heading">Send us a Message</h2>
+                        <form action="" method="POST" class="contact-form contact-form">
+                            <div class="row">
+                                <div style="width: 100%;">
+                                    <div class="form-group" >
+                                        <input class="form-control contact-input-100" id="name" name="name" placeholder="Name" type="text" >
+                                        <span class="alert-error"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-input-group">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input class="form-control contact-input-100" id="email" name="email" placeholder="Email*" type="email">
+                                        <span class="alert-error"></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input class="form-control contact-input-100" id="phone" name="phone" placeholder="Phone" type="text">
+                                        <span class="alert-error"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group comments">
+                                        <textarea class="form-control contact-input-100" id="comments" name="comments" placeholder="Tell Us About Project *"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <button type="submit" name="submit" id="submit" class="gen-btn">
+                                        <i class="fa fa-paper-plane"></i> Get in Touch
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Alert Message -->
+                            <div class="col-lg-12 alert-notification">
+                                <div id="message" class="alert-msg"></div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <h6 class="mission-vision-header">Our Mission</h6>
-                <p class="mission-vision-statements">
-                  Our mission is to provide sustainable and responsible
-                  solutions to meet the world’s growing demands for food, feed,
-                  and raw materials. We are committed to promoting agricultural
-                  and mineral resource development in an environmentally and
-                  socially responsible manner, while maximizing value for our
-                  stakeholders.
-                </p>
-              </div>
-            </div>
-            <div data-aos="fade-left" data-aos-duration="3000">
-              <div class="vision-area">
-                <div class="mission-vision-icon">
-                  <span
-                    class="iconify mission-vision-icons"
-                    data-icon="eos-icons:action-chains"
-                  ></span>
+
+                <div class="contact-form-area2">
+                    <div class="contact-style-one-info">
+                        <h2>
+                            Contact 
+                            <span>
+                                Information
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"><path d="M14.4,111.6c0,0,202.9-33.7,471.2,0c0,0-194-8.9-397.3,24.7c0,0,141.9-5.9,309.2,0" style="animation-play-state: running;"></path></svg>
+                            </span>
+                        </h2>
+                        <p>
+                            We would be happy to discuss how our products can meet your specific needs. Please feel free to contact us
+                        </p>
+                        <ul>
+                            <li class="wow fadeInUp">
+                                <div class="contact-icon">
+                                   <span class="iconify" data-icon="ic:sharp-phone"></span>
+                                </div>
+                                <div class="content">
+                                    <h5 class="title">Hotline</h5>
+                                   <p><a href="tel:+2349033011825" class="contact-links">+2349033011825 </a> |<a href="tel:+44 7367 507997" class="contact-links"> +44 7367 507997 </a></p>
+                                </div>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="300ms">
+                                <div class="contact-icon">
+                                   <span class="iconify" data-icon="ic:sharp-phone"></span>
+                                </div>
+                                <div class="info">
+                                    <h5 class="title">Our Location</h5>
+                                    <p>
+                                        UK: 34 Francis Court, Macarthur Close, Erith, United Kingdom, DA8 1DQ
+
+                                    </p>
+                                    <p>
+                                        Nigeria: 16 Munirat Layout, Orita Challenge, Ibadan, Oyo State, Nigeria.
+
+                                    </p>
+                                </div>
+                            </li>
+                          
+                        </ul>
+                    </div>
                 </div>
-                <h6 class="mission-vision-header">Our Vision</h6>
-                <p class="mission-vision-statements">
-                  Our vision is to be the leading agro-commodity and minerals
-                  company globally, recognized for our sustainable practices,
-                  innovative solutions, unwavering commitment to creating a
-                  positive impact on the world and continually innovate and
-                  leverage on technology to transform mineral resource
-                  development.
-                </p>
-              </div>
+
             </div>
-          </div>
         </div>
-      </div>
+    </div>
+    
     </main>
   <footer>
       <div class="footer-area">
