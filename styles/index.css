@@ -1119,6 +1119,19 @@ footer a:hover {
     overflow: hidden !important;
   }
 
+  .team-info {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .team-name-position {
+    max-width: 100%;
+  }
+  .team-img-div {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
   .hamburger {
     display: block;
     z-index: 9;
