@@ -14,14 +14,11 @@
   <body>
     <header>
       <div class="nav container">
+        <input type="checkbox" id="check" />
         <div class="nav-logo">
           <a href="../index.html">
-            <img
-              src="../images/logo.png"
-              alt="Burgeon Farms"
-              class="logo-img"
-            />
-          </a>
+            <img src="../images/logo.png" alt="Burgeon Farms" class="logo-img"
+          /></a>
         </div>
 
         <div class="nav-links">
@@ -32,7 +29,19 @@
             <a href="./about.html" class="nav-a">About</a>
           </h6>
           <h6 class="nav-link">
-            <a href="./products.html" class="nav-a">Our Products</a>
+            <a href="#" class="nav-a" class="">Our Products</a>
+            <ul class="dropdown">
+              <li>
+                <a href="./products.html#agro-commodities" class="dropdown-link"
+                  >Agro commodities</a
+                >
+              </li>
+              <li>
+                <a href="./products.html#minerals" class="dropdown-link"
+                  >Minerals</a
+                >
+              </li>
+            </ul>
           </h6>
           <h6 class="nav-link">
             <a href="./team.html" class="nav-a">Our Team</a>
@@ -76,10 +85,10 @@
         >
           <div class="container">
             <div class="about-banner-info">
-              <h4 class="banner-header bounceIn">Our Services</h4>
+              <h4 class="banner-header bounceIn">Our Products</h4>
               <p style="color: white; margin-bottom: 4%; font-size: 20px">
                 <a href="../index.html" class="breadcrumb">Home</a> > Our
-                Services
+                Products
               </p>
             </div>
           </div>
@@ -87,17 +96,17 @@
       </div>
     </header>
     <main>
-      <!-- <div class="our-services-section">
+      <div class="our-services-section1" style="margin-top: none !important">
         <div class="container">
           <center>
-            <p class="section-title our-service">OUR PRODUCTS</p>
-            <h6 class="about-header">Our Latest Products</h6>
+            <h6 class="about-header" id="agro-commodities">Agro-Commodity</h6>
           </center>
           <div class="service-boxes">
             <div
               class="services-box"
               data-aos="zoom-in-up"
               data-aos-duration="1500"
+              id="hibiscus"
             >
               <div class="service-image-boxes">
                 <img src="../images/hibiscus.jpg" class="service-img" />
@@ -110,58 +119,155 @@
                   from teas to skincare and hair care products.
                 </p>
               </div>
-              <div class="service-btn">
-                <button class="btn-type2">
-                  <div
-                    style="
-                      display: flex;
-                      align-items: center;
-                      justify-content: space-between;
-                    "
-                  >
-                    Details &nbsp;
-                    <span class="iconify" data-icon="quill:arrow-right"></span>
-                  </div>
-                </button>
-              </div>
             </div>
 
             <div
               class="services-box"
               data-aos="zoom-in-up"
               data-aos-duration="1500"
+              id="ginger"
             >
               <div class="service-image-boxes">
-                <img src="../images/ginger.jpg" class="service-img" />
+                <img src="../images/ginger2.webp" class="service-img" />
               </div>
               <div class="service-info">
-                <h6 class="service-info-header">GINGER</h6>
+                <h6 class="service-info-header">DRY SPLIT GINGER</h6>
                 <p class="service-info-text">
                   Our ginger is carefully selected to ensure freshness and
                   quality. It is commonly used as a spice, in teas, and for its
                   medicinal properties.
                 </p>
               </div>
-              <div class="service-btn">
-                <button class="btn-type2">
+            </div>
+          </div>
+
+          <div class="other-products">
+            <center>
+              <h6 class="about-header">More Agro-Commodity</h6>
+            </center>
+            <div class="swiper productswiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
                   <div
-                    style="
-                      display: flex;
-                      align-items: center;
-                      justify-content: space-between;
-                    "
+                    class="services-box"
+                    data-aos="zoom-in-up"
+                    data-aos-duration="1500"
                   >
-                    Details &nbsp;
-                    <span class="iconify" data-icon="quill:arrow-right"></span>
+                    <div class="service-image-boxes">
+                      <img src="../images/sesame.jpg" class="service-img" />
+                    </div>
+                    <div class="service-info">
+                      <h6 class="service-info-header">Sesame seeds</h6>
+                    </div>
                   </div>
-                </button>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="services-box"
+                    data-aos="zoom-in-up"
+                    data-aos-duration="1500"
+                  >
+                    <div class="service-image-boxes">
+                      <img src="../images/cashew.jpg" class="service-img" />
+                    </div>
+                    <div class="service-info">
+                      <h6 class="service-info-header">Raw cashew Nut</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="services-box"
+                    data-aos="zoom-in-up"
+                    data-aos-duration="1500"
+                  >
+                    <div class="service-image-boxes">
+                      <img src="../images/soybeans.jpg" class="service-img" />
+                    </div>
+                    <div class="service-info">
+                      <h6 class="service-info-header">soybeans</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="services-box"
+                    data-aos="zoom-in-up"
+                    data-aos-duration="1500"
+                  >
+                    <div class="service-image-boxes">
+                      <img src="../images/gumarabic.jpg" class="service-img" />
+                    </div>
+                    <div class="service-info">
+                      <h6 class="service-info-header">gum arabic</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="services-box"
+                    data-aos="zoom-in-up"
+                    data-aos-duration="1500"
+                  >
+                    <div class="service-image-boxes">
+                      <img src="../images/blackstone.jpg" class="service-img" />
+                    </div>
+                    <div class="service-info">
+                      <h6 class="service-info-header">blackstone flower</h6>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="our-services-section2" style="margin-top: none !important">
+        <div class="container">
+          <center>
+            <h6 class="about-header" id="minerals">Minerals</h6>
+          </center>
+          <div class="service-boxes">
             <div
               class="services-box"
               data-aos="zoom-in-up"
               data-aos-duration="1500"
+            >
+              <div class="service-image-boxes">
+                <img src="../images/coal.jpg" class="service-img" />
+              </div>
+              <div class="service-info">
+                <h6 class="service-info-header">COAL</h6>
+                <p class="service-info-text">
+                  Our coal is mined ensuring that it meets the strictest quality
+                  standards. and our lithium ore is of the highest quality,
+                  making it ideal for use in batteries and other electronics.
+                </p>
+              </div>
+            </div>
+            <div
+              class="services-box"
+              data-aos="zoom-in-up"
+              data-aos-duration="1500"
+            >
+              <div class="service-image-boxes">
+                <img src="../images/charcoal.jpg" class="service-img" />
+              </div>
+              <div class="service-info">
+                <h6 class="service-info-header">CHARCOAL</h6>
+                <p class="service-info-text">
+                  Our charcoal is made from sustainably sourced wood and is
+                  ideal for grilling, smoking, and other cooking methods. It
+                  burns evenly and produces a clean, smoky flavor.
+                </p>
+              </div>
+            </div>
+            <div
+              class="services-box"
+              data-aos="zoom-in-up"
+              data-aos-duration="1500"
+              id="lithiumore"
             >
               <div class="service-image-boxes">
                 <img src="../images/lithium.jpg" class="service-img" />
@@ -175,35 +281,61 @@
                   glass.
                 </p>
               </div>
-              <div class="service-btn">
-                <button class="btn-type2">
+            </div>
+          </div>
+          <div class="other-products">
+            <center>
+              <h6 class="about-header">More Minerals</h6>
+            </center>
+            <div class="swiper productswiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
                   <div
-                    style="
-                      display: flex;
-                      align-items: center;
-                      justify-content: space-between;
-                    "
+                    class="services-box products"
+                    data-aos="zoom-in-up"
+                    data-aos-duration="1500"
                   >
-                    Details &nbsp;
-                    <span class="iconify" data-icon="quill:arrow-right"></span>
+                    <div class="service-image-boxes">
+                      <img src="../images/zicronsand.jpg" class="service-img" />
+                    </div>
+                    <div class="service-info">
+                      <h6 class="service-info-header">zicron sand</h6>
+                    </div>
                   </div>
-                </button>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="services-box products"
+                    data-aos="zoom-in-up"
+                    data-aos-duration="1500"
+                  >
+                    <div class="service-image-boxes">
+                      <img src="../images/lead.jpg" class="service-img" />
+                    </div>
+                    <div class="service-info">
+                      <h6 class="service-info-header">Lead Ore</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="services-box products"
+                    data-aos="zoom-in-up"
+                    data-aos-duration="1500"
+                  >
+                    <div class="service-image-boxes">
+                      <img src="../images/zincore.jpeg" class="service-img" />
+                    </div>
+                    <div class="service-info">
+                      <h6 class="service-info-header">Zinc Ore</h6>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <center>
-            <div style="margin-top: 6%">
-              <button
-                class="gen-btn"
-                style="display: flex; align-items: center"
-              >
-                More Products &nbsp;
-                <span class="iconify" data-icon="quill:arrow-right"></span>
-              </button>
-            </div>
-          </center>
         </div>
-      </div> -->
+      </div>
 
       <div class="get-started">
         <div class="container">
@@ -224,7 +356,7 @@
         </div>
       </div>
     </main>
-    <footer>
+   <footer>
       <div class="footer-area">
         <div class="container">
           <div class="footer-section">
@@ -240,9 +372,9 @@
             <div class="footer-items">
               <h5>Explore</h5>
               <div class="footer-item-section">
-                <p>Hibiscus Flower</p>
-                <p>Ginger</p>
-                <p>Lithium Ore</p>
+                <p><a href="./products.html#hibiscus">Hibiscus Flower</a></p>
+                <p><a href="./products.html#ginger">Ginger</a></p>
+                <p><a href="./products.html#lithiumore">Lithium Ore</a></p>
               </div>
             </div>
             <div class="footer-items footer-company">
@@ -254,15 +386,23 @@
                 <p><a href="./pages/products.html"> Products</a></p>
 
                 <div class="social-media-group">
-                  <a
-                    href="https://www.instagram.com/burgeonltd/?hl=en"
-                    target="_blank"
-                    class="footer-icon socials"
-                  >
-                    <span class="iconify" data-icon="ri:instagram-line"></span>
+                  <a href="https://www.instagram.com/burgeonltd/?hl=en" target="_blank" class="footer-icon socials">
+                 
+                  <span
+                    class="iconify"
+                    data-icon="ri:instagram-line"
+                    
+                  ></span>
+                  
                   </a>
                   <a class="footer-icon socials">
-                    <span class="iconify" data-icon="ri:linkedin-fill"></span>
+                 
+                  <span
+                    class="iconify"
+                    data-icon="ri:linkedin-fill"
+                    
+                  ></span>
+                 
                   </a>
                 </div>
               </div>
@@ -270,55 +410,49 @@
             <div class="footer-items footer-contact">
               <h5>Contact Us</h5>
               <div class="footer-item-section">
-                <p></p>
-                <div style="display: flex; color: white; align-items: center">
-                  <div class="footer-icon">
-                    <span class="iconify" data-icon="ic:twotone-phone"></span>
+                
+                <p>
+                  <div style="display: flex; color: white;  align-items: center;">
+                  <div class="footer-icon"> 
+                  <span
+                    class="iconify"
+                    data-icon="ic:twotone-phone"
+                    
+                  ></span>
                   </div>
                   <div>
-                    <p><a href="tel:+2349033011825">+2349033011825</a></p>
-                    <p><a href="tel:+44 7367 507997">+44 7367 507997</a></p>
+                       <p><a href="tel:+2349033011825">+2349033011825</a></p>
+                      <p><a href="tel:+44 7367 507997">+44 7367 507997</a></p>
                   </div>
-                </div>
+                  </div>
+                  
+                </p>
+                <p>
+                  <div style="display: flex; color: white;  align-items: center;">
+                  <div class="footer-icon"> 
+                 <span class="iconify" data-icon="fluent:location-12-filled"></span>
+                  </div>
+                  <div>
+                       <p><a href="https://goo.gl/maps/wAy4pJyBhD3ebDgN6" target="_blank">UK: 34 Francis Court, Macarthur Close, Erith, United Kingdom, DA8 1DQ
+</a></p>
+                      
+                  </div>
+                  </div>
+                  
+                </p>
+                 <p>
+                  <div style="display: flex; color: white;  align-items: center;">
+                  <div class="footer-icon"> 
+                 <span class="iconify" data-icon="fluent:location-12-filled"></span>
+                  </div>
+                  <div>
+                       <p><a href="https://goo.gl/maps/axVV47e8h6mvs1Z3A" target="_blank">Nigeria: 16 Munirat Layout, Orita Challenge, Ibadan, Oyo State, Nigeria.</a></p>
+                      
+                  </div>
+                  </div>
+                  
+                </p>
 
-                <p></p>
-                <div style="display: flex; color: white; align-items: center">
-                  <div class="footer-icon">
-                    <span
-                      class="iconify"
-                      data-icon="fluent:location-12-filled"
-                    ></span>
-                  </div>
-                  <div>
-                    <p>
-                      <a
-                        href="https://goo.gl/maps/wAy4pJyBhD3ebDgN6"
-                        target="_blank"
-                        >UK: 34 Francis Court, Macarthur Close, Erith, United
-                        Kingdom, DA8 1DQ
-                      </a>
-                    </p>
-                  </div>
-                </div>
-
-                <div style="display: flex; color: white; align-items: center">
-                  <div class="footer-icon">
-                    <span
-                      class="iconify"
-                      data-icon="fluent:location-12-filled"
-                    ></span>
-                  </div>
-                  <div>
-                    <p>
-                      <a
-                        href="https://goo.gl/maps/axVV47e8h6mvs1Z3A"
-                        target="_blank"
-                        >Nigeria: 16 Munirat Layout, Orita Challenge, Ibadan,
-                        Oyo State, Nigeria.</a
-                      >
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
