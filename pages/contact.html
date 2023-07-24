@@ -13,18 +13,34 @@
   </head>
   <body>
     <header>
-      <div class="nav container">
+     <div class="nav container">
+        <input type="checkbox" id="check" />
         <div class="nav-logo">
-          <a href="../index.html">
-          <img src="../images/logo.png" alt="Burgeon Farms" class="logo-img" />
-          </a>
+<a href="../index.html">
+          <img src="./images/logo.png" alt="Burgeon Farms" class="logo-img" /></a>
         </div>
 
         <div class="nav-links">
-          <h6 class="nav-link"><a href="../index.html" class="nav-a">Home</a></h6>
-          <h6 class="nav-link"><a href="./about.html" class="nav-a"> About</a></h6>
           <h6 class="nav-link">
-            <a href="./products.html" class="nav-a">Our Products</a>
+            <a href="../index.html" class="nav-a">Home</a>
+          </h6>
+          <h6 class="nav-link">
+            <a href="./about.html" class="nav-a">About</a>
+          </h6>
+          <h6 class="nav-link">
+            <a href="#" class="nav-a" class="">Our Products</a>
+           <ul class="dropdown">
+              <li>
+                <a href="./products.html#agro-commodities" class="dropdown-link"
+                  >Agro commodities</a
+                >
+              </li>
+              <li>
+                <a href="./products.html#minerals" class="dropdown-link"
+                  >Minerals</a
+                >
+              </li>
+            </ul>
           </h6>
           <h6 class="nav-link">
             <a href="./team.html" class="nav-a">Our Team</a>
@@ -158,7 +174,21 @@
                             </li>
                             <li class="wow fadeInUp" data-wow-delay="300ms">
                                 <div class="contact-icon">
-                                   <span class="iconify" data-icon="ic:sharp-phone"></span>
+                                   <span class="iconify" data-icon="carbon:email"></span>
+                                </div>
+                                <div class="info">
+                                    <h5 class="title">Our Email</h5>
+                                    <p>
+                                      <a href="mailto:contact@burgeonltd.com" class="contact-links">
+                                        contact@burgeonltd.com
+                                    </a>
+                                    </p>
+                
+                                </div>
+                            </li>
+                             <li class="wow fadeInUp" data-wow-delay="300ms">
+                                <div class="contact-icon">
+                                   <span class="iconify" data-icon="carbon:location-filled"></span>
                                 </div>
                                 <div class="info">
                                     <h5 class="title">Our Location</h5>
@@ -182,7 +212,7 @@
     </div>
     
     </main>
-  <footer>
+ <footer>
       <div class="footer-area">
         <div class="container">
           <div class="footer-section">
@@ -198,21 +228,42 @@
             <div class="footer-items">
               <h5>Explore</h5>
               <div class="footer-item-section">
-                <p>Hibiscus Flower</p>
-                <p>Ginger</p>
-                <p>Lithium Ore</p>
+                <p><a href="./products.html#hibiscus">Hibiscus Flower</a></p>
+                <p><a href="./products.html#ginger">Ginger</a></p>
+                <p><a href="./products.html#lithiumore">Lithium Ore</a></p>
               </div>
             </div>
             <div class="footer-items footer-company">
               <h5>Our Company</h5>
               <div class="footer-item-section">
-                <p><a href="../index.html">Home</a></p>
-                <p><a href="./about.html">About Us</a></p>
-                <p><a href="./about.html#team">Our Team</a></p>
-                <p><a href="./products.html"> Products</a></p>
+                <p><a href="#">Home</a></p>
+                <p><a href="./pages/about.html">About Us</a></p>
+                <p><a href="./pages/about.html">Our Team</a></p>
+                <p><a href="./pages/products.html"> Products</a></p>
+
+                <div class="social-media-group">
+                  <a href="https://www.instagram.com/burgeonltd/?hl=en" target="_blank" class="footer-icon socials">
+                 
+                  <span
+                    class="iconify"
+                    data-icon="ri:instagram-line"
+                    
+                  ></span>
+                  
+                  </a>
+                  <a class="footer-icon socials">
+                 
+                  <span
+                    class="iconify"
+                    data-icon="ri:linkedin-fill"
+                    
+                  ></span>
+                 
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="footer-items footer-contact" >
+            <div class="footer-items footer-contact">
               <h5>Contact Us</h5>
               <div class="footer-item-section">
                 
