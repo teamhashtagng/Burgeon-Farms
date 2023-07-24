@@ -21,3 +21,55 @@ window.addEventListener("scroll", () => {
     }
   }
 });
+
+const ServicesStyleOne = new Swiper(".productswiper", {
+  // Optional parameters
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 30,
+  autoplay: true,
+  speed: 1000,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  centeredSlides: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    120: {
+      slidesPerView: 1.5,
+      spaceBetween: 5,
+    },
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1.5,
+      spaceBetween: 5,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 1.5,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+    1199: {
+      slidesPerView: 4,
+    },
+  },
+});
+
+// dropDownShow = document.querySelector('.dropdown');
+// const
