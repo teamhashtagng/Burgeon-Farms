@@ -55,18 +55,20 @@ const ServicesStyleOne = new Swiper(".productswiper", {
     },
     // when window width is >= 480px
     480: {
-      slidesPerView: 2,
+      slidesPerView: 1.5,
+      spaceBetween: 5,
     },
     768: {
       slidesPerView: 1.5,
-      spaceBetween: 20,
+      spaceBetween: 30,
     },
     992: {
       slidesPerView: 3,
-      spaceBetween: 50,
+      spaceBetween: 30,
     },
     1199: {
       slidesPerView: 4,
+      spaceBetween: 30,
     },
   },
 });
