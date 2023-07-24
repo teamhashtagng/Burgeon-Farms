@@ -672,7 +672,7 @@ footer a:hover {
     float: none;
     position: fixed;
     font-size: 30px;
-    height: 30%;
+    height: 40%;
     background-color: white;
 
     display: block !important;
@@ -822,8 +822,13 @@ footer a:hover {
   .services-box {
     width: 80%;
   }
+
   .banner-img {
-    height: 400px !important;
+    height: 550px !important;
+  }
+
+  .contact-input-group {
+    flex-direction: column;
   }
 
   .service-image-boxes {
@@ -853,7 +858,7 @@ footer a:hover {
   }
   .nav {
     justify-content: unset;
-    gap: 30%;
+    gap: 25%;
   }
   .work-with-us-content {
     display: flex;
