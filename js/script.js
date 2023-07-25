@@ -25,8 +25,7 @@ window.addEventListener("scroll", () => {
 const ServicesStyleOne = new Swiper(".productswiper", {
   // Optional parameters
   loop: true,
-  slidesPerView: 3.5,
-  spaceBetween: 50,
+  spaceBetween: 10,
   autoplay: true,
   speed: 1000,
   autoplay: {
@@ -60,11 +59,16 @@ const ServicesStyleOne = new Swiper(".productswiper", {
     },
     768: {
       slidesPerView: 1.5,
-      spaceBetween: 30,
+      spaceBetween: 5,
     },
-    992: {
+
+    1280: {
+      slidesPerView: 1.5,
+      spaceBetween: 5,
+    },
+    1920: {
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 5,
     },
   },
 });
