@@ -13,12 +13,11 @@
   </head>
   <body>
     <header>
-      <div class="nav container">
+     <div class="nav container">
         <input type="checkbox" id="check" />
         <div class="nav-logo">
-          <a href="../index.html">
-            <img src="../images/logo.png" alt="Burgeon Farms" class="logo-img"
-          /></a>
+<a href="../index.html">
+          <img src="../images/logo.png" alt="Burgeon Farms" class="logo-img" /></a>
         </div>
 
         <div class="nav-links">
@@ -30,7 +29,7 @@
           </h6>
           <h6 class="nav-link">
             <a href="#" class="nav-a" class="">Our Products</a>
-            <ul class="dropdown">
+           <ul class="dropdown">
               <li>
                 <a href="./products.html#agro-commodities" class="dropdown-link"
                   >Agro commodities</a
@@ -71,7 +70,7 @@
         <div
           class="about-banner-img"
           style="
-            background-image: linear-gradient(
+           background-image: linear-gradient(
                 0.6deg,
                 rgba(38, 42, 39, 0.813) 10%,
                 rgba(0, 0, 0, 0) 120%
@@ -98,174 +97,125 @@
         <div class="swiper-button-prev"></div> -->
     </header>
     <main>
-      <div class="contact-area default-padding">
+       <div class="contact-area default-padding" style="background-image: url(assets/img/shape/28.png);">
         <div class="container">
-          <div class="contact-section">
-            <div class="contact-form-area">
-              <div class="contact-form-style-one">
-                <h5 class="sub-title">Have Questions?</h5>
-                <h2 class="heading">Send us a Message</h2>
-                <form action="" id="form" class="contact-form contact-form">
-                  <div class="row">
-                    <div style="width: 100%">
-                      <div class="form-group">
-                        <input
-                          class="form-control contact-input-100"
-                          id="name"
-                          name="name"
-                          placeholder="Name"
-                          type="text"
-                          required
-                        />
-                        <span class="alert-error"></span>
-                      </div>
+            <div class="contact-section">
+                
+                <div class="contact-form-area">
+                    <div class="contact-form-style-one">
+                        <h5 class="sub-title">Have Questions?</h5>
+                        <h2 class="heading">Send us a Message</h2>
+                        <form action="" method="POST" class="contact-form contact-form">
+                            <div class="row">
+                                <div style="width: 100%;">
+                                    <div class="form-group" >
+                                        <input class="form-control contact-input-100" id="name" name="name" placeholder="Name" type="text" >
+                                        <span class="alert-error"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-input-group">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input class="form-control contact-input-100" id="email" name="email" placeholder="Email*" type="email">
+                                        <span class="alert-error"></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input class="form-control contact-input-100" id="phone" name="phone" placeholder="Phone" type="text">
+                                        <span class="alert-error"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group comments">
+                                        <textarea class="form-control contact-input-100" id="comments" name="comments" placeholder="Tell Us About Project *"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <button type="submit" name="submit" id="submit" class="gen-btn">
+                                        <i class="fa fa-paper-plane"></i> Get in Touch
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Alert Message -->
+                            <div class="col-lg-12 alert-notification">
+                                <div id="message" class="alert-msg"></div>
+                            </div>
+                        </form>
                     </div>
-                  </div>
-                  <div class="contact-input-group">
-                    <div class="col-lg-6">
-                      <div class="form-group">
-                        <input
-                          class="form-control contact-input-100"
-                          id="email"
-                          name="email"
-                          placeholder="Email*"
-                          type="email"
-                          required
-                        />
-                        <span class="alert-error"></span>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="form-group">
-                        <input
-                          class="form-control contact-input-100"
-                          id="phone"
-                          name="phone"
-                          placeholder="Phone"
-                          type="number"
-                          required
-                        />
-                        <span class="alert-error"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <div class="form-group comments">
-                        <textarea
-                          class="form-control contact-input-100"
-                          id="message"
-                          name="comments"
-                          required
-                          placeholder="Tell Us About Project *"
-                        ></textarea>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <button
-                        type="submit"
-                        name="submit"
-                        id="submit"
-                        class="gen-btn"
-                      >
-                        <i class="fa fa-paper-plane"></i> Get in Touch
-                      </button>
-                    </div>
-                  </div>
-                  <!-- Alert Message -->
-                  <div class="col-lg-12 alert-notification">
-                    <div id="message" class="alert-msg"></div>
-                  </div>
-                </form>
-              </div>
-            </div>
+                </div>
 
-            <div class="contact-form-area2">
-              <div class="contact-style-one-info">
-                <h2>
-                  Contact
-                  <span>
-                    Information
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 500 150"
-                      preserveAspectRatio="none"
-                    >
-                      <path
-                        d="M14.4,111.6c0,0,202.9-33.7,471.2,0c0,0-194-8.9-397.3,24.7c0,0,141.9-5.9,309.2,0"
-                        style="animation-play-state: running"
-                      ></path>
-                    </svg>
-                  </span>
-                </h2>
-                <p>
-                  We would be happy to discuss how our products can meet your
-                  specific needs. Please feel free to contact us
-                </p>
-                <ul>
-                  <li class="wow fadeInUp">
-                    <div class="contact-icon">
-                      <span class="iconify" data-icon="ic:sharp-phone"></span>
-                    </div>
-                    <div class="content">
-                      <h5 class="title">Hotline</h5>
-                      <p>
-                        <a href="tel:+2349033011825" class="contact-links"
-                          >+2349033011825
-                        </a>
-                        |<a href="tel:+44 7367 507997" class="contact-links">
-                          +44 7367 507997
-                        </a>
-                      </p>
-                    </div>
-                  </li>
-                  <li class="wow fadeInUp" data-wow-delay="300ms">
-                    <div class="contact-icon">
-                      <span class="iconify" data-icon="carbon:email"></span>
-                    </div>
-                    <div class="info">
-                      <h5 class="title">Our Email</h5>
-                      <p>
-                        <a
-                          href="mailto:info@burgeonltd.com"
-                          class="contact-links"
-                        >
-                          info@burgeonltd.com
-                        </a>
-                      </p>
-                    </div>
-                  </li>
-                  <li class="wow fadeInUp" data-wow-delay="300ms">
-                    <div class="contact-icon">
-                      <span
-                        class="iconify"
-                        data-icon="carbon:location-filled"
-                      ></span>
-                    </div>
-                    <div class="info">
-                      <h5 class="title">Our Location</h5>
-                      <p>
-                        Nigeria: 16 Munirat Layout, Orita Challenge, Ibadan, Oyo
-                        State, Nigeria.
-                      </p>
-                      <br />
+                <div class="contact-form-area2">
+                    <div class="contact-style-one-info">
+                        <h2>
+                            Contact 
+                            <span>
+                                Information
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"><path d="M14.4,111.6c0,0,202.9-33.7,471.2,0c0,0-194-8.9-397.3,24.7c0,0,141.9-5.9,309.2,0" style="animation-play-state: running;"></path></svg>
+                            </span>
+                        </h2>
+                        <p>
+                            We would be happy to discuss how our products can meet your specific needs. Please feel free to contact us
+                        </p>
+                        <ul>
+                            <li class="wow fadeInUp">
+                                <div class="contact-icon">
+                                   <span class="iconify" data-icon="ic:sharp-phone"></span>
+                                </div>
+                                <div class="content">
+                                    <h5 class="title">Hotline</h5>
+                                   <p><a href="tel:+2349033011825" class="contact-links">+2349033011825 </a> |<a href="tel:+44 7367 507997" class="contact-links"> +44 7367 507997 </a></p>
+                                </div>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="300ms">
+                                <div class="contact-icon">
+                                   <span class="iconify" data-icon="carbon:email"></span>
+                                </div>
+                                <div class="info">
+                                    <h5 class="title">Our Email</h5>
+                                    <p>
+                                      <a href="mailto:info@burgeonltd.com" class="contact-links">
+                                        info@burgeonltd.com
+                                    </a>
+                                    </p>
+                
+                                </div>
+                            </li>
+                             <li class="wow fadeInUp" data-wow-delay="300ms">
+                                <div class="contact-icon">
+                                   <span class="iconify" data-icon="carbon:location-filled"></span>
+                                </div>
+                                <div class="info">
+                                    <h5 class="title">Our Location</h5>
+                                     <p>
+                                        Nigeria: 16 Munirat Layout, Orita Challenge, Ibadan, Oyo State, Nigeria.
 
-                      <p>
-                        UK: 34 Francis Court, Macarthur Close, Erith, United
-                        Kingdom, DA8 1DQ
-                      </p>
+                                    </p>
+                                    <br>
+                                    
+                                    <p>
+                                        UK: 34 Francis Court, Macarthur Close, Erith, United Kingdom, DA8 1DQ
+
+                                    </p>
+                                   
+                                </div>
+                            </li>
+                          
+                        </ul>
                     </div>
-                  </li>
-                </ul>
-              </div>
+                </div>
+
             </div>
-          </div>
         </div>
-      </div>
+    </div>
+    
     </main>
-    <footer>
+ <footer>
       <div class="footer-area">
         <div class="container">
           <div class="footer-section">
@@ -295,15 +245,23 @@
                 <p><a href="./products.html"> Products</a></p>
 
                 <div class="social-media-group">
-                  <a
-                    href="https://www.instagram.com/burgeonltd/?hl=en"
-                    target="_blank"
-                    class="footer-icon socials"
-                  >
-                    <span class="iconify" data-icon="ri:instagram-line"></span>
+                  <a href="https://www.instagram.com/burgeonltd/?hl=en" target="_blank" class="footer-icon socials">
+                 
+                  <span
+                    class="iconify"
+                    data-icon="ri:instagram-line"
+                    
+                  ></span>
+                  
                   </a>
                   <a class="footer-icon socials">
-                    <span class="iconify" data-icon="ri:linkedin-fill"></span>
+                 
+                  <span
+                    class="iconify"
+                    data-icon="ri:linkedin-fill"
+                    
+                  ></span>
+                 
                   </a>
                 </div>
               </div>
@@ -311,55 +269,49 @@
             <div class="footer-items footer-contact">
               <h5>Contact Us</h5>
               <div class="footer-item-section">
-                <p></p>
-                <div style="display: flex; color: white; align-items: center">
-                  <div class="footer-icon">
-                    <span class="iconify" data-icon="ic:twotone-phone"></span>
+                
+                <p>
+                  <div style="display: flex; color: white;  align-items: center;">
+                  <div class="footer-icon"> 
+                  <span
+                    class="iconify"
+                    data-icon="ic:twotone-phone"
+                    
+                  ></span>
                   </div>
                   <div>
-                    <p><a href="tel:+2349033011825">+2349033011825</a></p>
-                    <p><a href="tel:+44 7367 507997">+44 7367 507997</a></p>
+                       <p><a href="tel:+2349033011825">+2349033011825</a></p>
+                      <p><a href="tel:+44 7367 507997">+44 7367 507997</a></p>
                   </div>
-                </div>
+                  </div>
+                  
+                </p>
+                <p>
+                  <div style="display: flex; color: white;  align-items: center;">
+                  <div class="footer-icon"> 
+                 <span class="iconify" data-icon="fluent:location-12-filled"></span>
+                  </div>
+                  <div>
+                       <p><a href="https://goo.gl/maps/wAy4pJyBhD3ebDgN6" target="_blank">UK: 34 Francis Court, Macarthur Close, Erith, United Kingdom, DA8 1DQ
+</a></p>
+                      
+                  </div>
+                  </div>
+                  
+                </p>
+                 <p>
+                  <div style="display: flex; color: white;  align-items: center;">
+                  <div class="footer-icon"> 
+                 <span class="iconify" data-icon="fluent:location-12-filled"></span>
+                  </div>
+                  <div>
+                       <p><a href="https://goo.gl/maps/axVV47e8h6mvs1Z3A" target="_blank">Nigeria: 16 Munirat Layout, Orita Challenge, Ibadan, Oyo State, Nigeria.</a></p>
+                      
+                  </div>
+                  </div>
+                  
+                </p>
 
-                <p></p>
-                <div style="display: flex; color: white; align-items: center">
-                  <div class="footer-icon">
-                    <span
-                      class="iconify"
-                      data-icon="fluent:location-12-filled"
-                    ></span>
-                  </div>
-                  <div>
-                    <p>
-                      <a
-                        href="https://goo.gl/maps/wAy4pJyBhD3ebDgN6"
-                        target="_blank"
-                        >UK: 34 Francis Court, Macarthur Close, Erith, United
-                        Kingdom, DA8 1DQ
-                      </a>
-                    </p>
-                  </div>
-                </div>
-
-                <div style="display: flex; color: white; align-items: center">
-                  <div class="footer-icon">
-                    <span
-                      class="iconify"
-                      data-icon="fluent:location-12-filled"
-                    ></span>
-                  </div>
-                  <div>
-                    <p>
-                      <a
-                        href="https://goo.gl/maps/axVV47e8h6mvs1Z3A"
-                        target="_blank"
-                        >Nigeria: 16 Munirat Layout, Orita Challenge, Ibadan,
-                        Oyo State, Nigeria.</a
-                      >
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -418,15 +370,6 @@
     });
   </script>
   <script src="../js/script.js"></script>
-  <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-  ></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("2LDElIc_CA7UHWIvp");
-    })();
-  </script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
