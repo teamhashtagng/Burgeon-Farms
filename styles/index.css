@@ -726,6 +726,10 @@ footer a:hover {
   }
 }
 
+.company-logo {
+  margin-top: 6%;
+}
+
 .banner-img {
   /* -webkit-transition: 10s ease-out;
   transition: 10s ease-out;
@@ -1130,6 +1134,10 @@ footer a:hover {
   }
   .team-img {
     object-fit: contain !important;
+  }
+
+  .about-us-page-s1 {
+    flex-direction: column;
   }
 
   .container {
